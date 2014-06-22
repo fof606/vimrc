@@ -51,7 +51,7 @@ set completeopt=menu
 " set completeopt = longest,menu
 " let OmniCpp_MayCompleteDot = 1      " autocomplete with .
 " let OmniCpp_MayCompleteArrow = 1    " autocomplete with ->
-let OmniCpp_MayCompleteScope = 1    " autocomplete with ::
+" let OmniCpp_MayCompleteScope = 1    " autocomplete with ::
 " let OmniCpp_SelectFirstItem = 2     " select first item (but don't insert)
 " let OmniCpp_NamespaceSearch = 2     " search namespaces in this and included files
 " let OmniCpp_ShowPrototypeInAbbr = 1 " show function prototype in popup window
@@ -66,10 +66,10 @@ let OmniCpp_MayCompleteScope = 1    " autocomplete with ::
 :inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap < <><ESC>i
-:inoremap > <c-r>=ClosePair('>')<CR>
 :inoremap " ""<ESC>i
 :inoremap ' ''<ESC>i
+" :inoremap < <><ESC>i
+" :inoremap > <c-r>=ClosePair('>')<CR>
 
 function ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
@@ -78,3 +78,15 @@ function ClosePair(char)
         return a:char
     endif
 endf
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-multiple-cursors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" for mutil cursor
+" Bundle 'terryma/vim-multiple-cursors'
+" let g:multi_cursor_use_default_mapping=0
+" Default mapping
+let g:multi_cursor_next_key='<C-m>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
