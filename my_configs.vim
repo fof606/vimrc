@@ -109,4 +109,4 @@ let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ack.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" let g:ackprg = "ack -H --nocolor --nogroup --column"
