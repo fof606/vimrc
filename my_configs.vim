@@ -1,5 +1,6 @@
 set nu
 map <leader>cl :close<cr>
+map <leader>tf :tabfirst<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taglist 
