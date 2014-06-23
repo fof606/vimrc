@@ -27,6 +27,7 @@ map <F8> :run macros/gdb_mappings.vim<CR>
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
 set tags+=~/.vim_runtime/tagfiles/tags_of_stl;
 set tags+=~/.vim_runtime/tagfiles/tags_of_boost;
+set tags+=~/.vim_runtime/tagfiles/tags_of_protobuf;
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " create tags of boost for every library 
