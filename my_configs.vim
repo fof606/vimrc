@@ -1,6 +1,7 @@
 set nu
 map <leader>cl :close<cr>
 map <leader>tf :tabfirst<cr>
+map <leader>sh :!
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taglist 
@@ -15,7 +16,6 @@ let Tlist_Use_Right_Window = 1
 " => a.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>aa :A<cr>
-map <leader>al $a
 
 """"""""""""""""""""""""""""""
 " => vimgdb setting
@@ -102,10 +102,10 @@ map <leader>dox :Dox<cr>
 let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
 let g:DoxygenToolkit_paramTag_pre="@Param "
 let g:DoxygenToolkit_returnTag="@Returns   "
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="Mathias Lorente"
 let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
+" let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+" let g:DoxygenToolkit_blockFooter="--------------------------------------------------------------------------"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ack.vim

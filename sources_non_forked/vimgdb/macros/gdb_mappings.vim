@@ -18,8 +18,8 @@ function! s:Toggle()
 	nmap <silent> <C-Z> :call gdb("\032")<CR>
 
 	nmap <silent> B :call gdb("info breakpoints")<CR>
-	nmap <silent> L :call gdb("info locals")<CR>
-	nmap <silent> A :call gdb("info args")<CR>
+	" nmap <silent> L :call gdb("info locals")<CR>
+	" nmap <silent> A :call gdb("info args")<CR>
 	nmap <silent> S :call gdb("step")<CR>
 	nmap <silent> I :call gdb("stepi")<CR>
 	nmap <silent> <C-N> :call gdb("next")<CR>
